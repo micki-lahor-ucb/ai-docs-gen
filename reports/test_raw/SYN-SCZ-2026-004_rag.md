@@ -1,0 +1,1 @@
+El caso de linderos ha sido cerrado de inmediato por falta de pruebas.

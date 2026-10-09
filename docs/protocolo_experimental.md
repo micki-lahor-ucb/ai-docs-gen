@@ -1,9 +1,10 @@
 # Protocolo experimental
 
 **Fecha de fijación:** 9 de octubre de 2026  
-**Estado:** fijado antes de construir el conjunto de prueba y antes de generar cualquier borrador de ese conjunto.
+**Estado:** reglas fijadas el 9 de octubre de 2026, antes de ver los borradores de la prueba.  
+**Generación oficial:** 9 de octubre de 2026, con el commit `f4ca646`. No se modificó la plantilla, el recuperador ni las instrucciones después de producir esas salidas.
 
-No existen todavía salidas del conjunto de prueba. Las reglas de esta página no se reescriben después de leer esas salidas.
+Las salidas de la prueba se generaron una sola vez. Las reglas de esta página no se reescriben para mejorarlas.
 
 ## Pregunta
 
