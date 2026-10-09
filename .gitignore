@@ -1,0 +1,12 @@
+ai-docs-gen-backend/.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.pyo
+.env
+.cursor/
+*.tmp
+*.temp
+Thumbs.db
+docs/Consigna Proyecto final de Módulo.txt
+docs/planificacion_ai_capstone_v2.md
