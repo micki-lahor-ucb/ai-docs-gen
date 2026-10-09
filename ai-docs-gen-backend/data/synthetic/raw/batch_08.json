@@ -1,0 +1,175 @@
+{
+  "_label": "DOCUMENTO SINTÉTICO PARA EVALUACIÓN ACADÉMICA — NO CORRESPONDE A UN CASO REAL",
+  "batch": 8,
+  "review_note": "Las horas de la sustracción en Santa Cruz no se copian en el JSON. El camión azul y la luz trasera rota quedan en fuentes distintas. Se cambiaron los documentos 99887766 y 44556677 porque ya estaban usados.",
+  "cases": [
+    {
+      "case_id": "SYN-CBB-2026-022",
+      "cud": "CUD-SYN-4455-XQZ",
+      "department": "Cochabamba",
+      "report_date": "2026-10-09",
+      "subjects": [
+        {
+          "name": "Arturo Fernando Rojas",
+          "document_type": "CI",
+          "document_number": "14151617",
+          "role": "denunciante"
+        }
+      ],
+      "legal_status": null,
+      "objective": "Documentar el reporte de daños estructurales ocasionados a una barda perimetral.",
+      "facts": [
+        "Arturo Fernando Rojas reportó daños en una barda perimetral el 10 de mayo de 2026.",
+        "El incidente se produjo a causa del impacto de un vehículo."
+      ],
+      "missing_fields": [],
+      "contradictions": [],
+      "source_ids": [
+        "SRC-CBB-2026-051",
+        "SRC-CBB-2026-052",
+        "SRC-CBB-2026-053",
+        "SRC-CBB-2026-054",
+        "SRC-CBB-2026-055"
+      ],
+      "evaluation_key": {
+        "relevant_source_ids": [
+          "SRC-CBB-2026-051",
+          "SRC-CBB-2026-052"
+        ],
+        "required_facts": [
+          "Arturo Fernando Rojas reportó daños en una barda perimetral el 10 de mayo de 2026.",
+          "El incidente se produjo a causa del impacto de un vehículo."
+        ],
+        "source_only_facts": [
+          {
+            "fact_id": "SYN-CBB-2026-022-F1",
+            "text": "La barda perimetral dañada había sido pintada recientemente de color verde.",
+            "source_id": "SRC-CBB-2026-051"
+          },
+          {
+            "fact_id": "SYN-CBB-2026-022-F2",
+            "text": "Un camión azul fue visto cerca de la barda antes del daño.",
+            "source_id": "SRC-CBB-2026-051"
+          },
+          {
+            "fact_id": "SYN-CBB-2026-022-F3",
+            "text": "El camión azul tenía la luz trasera derecha rota.",
+            "source_id": "SRC-CBB-2026-052",
+            "combines_with": ["SYN-CBB-2026-022-F2"],
+            "combined_reading": "El vehículo responsable fue un camión azul con la luz trasera derecha rota."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "SYN-SCZ-2026-023",
+      "cud": "CUD-SYN-7788-PLM",
+      "department": "Santa Cruz",
+      "report_date": "2026-10-09",
+      "subjects": [
+        {
+          "name": "Lucía Carmen Vargas",
+          "document_type": "CI",
+          "document_number": "18192021",
+          "role": "testigo"
+        }
+      ],
+      "legal_status": null,
+      "objective": "Verificar la cronología de la sustracción de herramientas en el depósito principal.",
+      "facts": [
+        "Lucía Carmen Vargas presenció a una persona no autorizada en el área de almacenamiento de herramientas el 15 de agosto de 2026.",
+        "El sospechoso abandonó una mochila negra durante su huida."
+      ],
+      "missing_fields": [],
+      "contradictions": [
+        "Las dos fuentes pertinentes no coinciden en la hora de la sustracción."
+      ],
+      "source_ids": [
+        "SRC-SCZ-2026-061",
+        "SRC-SCZ-2026-062",
+        "SRC-SCZ-2026-063",
+        "SRC-SCZ-2026-064",
+        "SRC-SCZ-2026-065",
+        "SRC-SCZ-2026-066"
+      ],
+      "evaluation_key": {
+        "relevant_source_ids": [
+          "SRC-SCZ-2026-061",
+          "SRC-SCZ-2026-062"
+        ],
+        "required_facts": [
+          "Lucía Carmen Vargas presenció a una persona no autorizada en el área de almacenamiento de herramientas el 15 de agosto de 2026.",
+          "El sospechoso abandonó una mochila negra durante su huida."
+        ],
+        "source_only_facts": [
+          {
+            "fact_id": "SYN-SCZ-2026-023-F1",
+            "text": "Entre los bienes sustraídos se encontraba un taladro eléctrico de color rojo.",
+            "source_id": "SRC-SCZ-2026-061"
+          },
+          {
+            "fact_id": "SYN-SCZ-2026-023-F2",
+            "text": "La mochila negra fue hallada cerca de la puerta norte y contenía el taladro eléctrico sustraído.",
+            "source_id": "SRC-SCZ-2026-062",
+            "combines_with": ["SYN-SCZ-2026-023-F1"],
+            "combined_reading": "El taladro eléctrico rojo fue recuperado dentro de la mochila negra abandonada cerca de la puerta norte."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "SYN-ORU-2026-024",
+      "cud": "CUD-SYN-2211-HTK",
+      "department": "Oruro",
+      "report_date": "2026-10-09",
+      "subjects": [
+        {
+          "name": "Mario Luis Céspedes",
+          "document_type": "CI",
+          "document_number": "77665544",
+          "role": "sospechoso"
+        }
+      ],
+      "legal_status": null,
+      "objective": "Determinar la presencia del personal durante la inundación del depósito central.",
+      "facts": [
+        "Una inundación afectó el depósito central durante la madrugada del 20 de septiembre de 2026.",
+        "Mario Luis Céspedes es empleado asignado a ese recinto."
+      ],
+      "missing_fields": [
+        "Hora exacta de ingreso y salida del turno de Mario Luis Céspedes.",
+        "Confirmación de su presencia en el lugar durante la inundación."
+      ],
+      "contradictions": [],
+      "source_ids": [
+        "SRC-ORU-2026-071",
+        "SRC-ORU-2026-072",
+        "SRC-ORU-2026-073",
+        "SRC-ORU-2026-074",
+        "SRC-ORU-2026-075"
+      ],
+      "evaluation_key": {
+        "relevant_source_ids": [
+          "SRC-ORU-2026-071",
+          "SRC-ORU-2026-072"
+        ],
+        "required_facts": [
+          "Una inundación afectó el depósito central durante la madrugada del 20 de septiembre de 2026.",
+          "Mario Luis Céspedes es empleado asignado a ese recinto."
+        ],
+        "source_only_facts": [
+          {
+            "fact_id": "SYN-ORU-2026-024-F1",
+            "text": "La inundación arruinó 50 cajas de papel.",
+            "source_id": "SRC-ORU-2026-071"
+          },
+          {
+            "fact_id": "SYN-ORU-2026-024-F2",
+            "text": "El supervisor del área, el Ing. Ticona, utiliza un casco amarillo.",
+            "source_id": "SRC-ORU-2026-072"
+          }
+        ]
+      }
+    }
+  ]
+}

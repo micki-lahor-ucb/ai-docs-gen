@@ -1,0 +1,189 @@
+{
+  "_label": "DOCUMENTO SINTÉTICO PARA EVALUACIÓN ACADÉMICA — NO CORRESPONDE A UN CASO REAL",
+  "batch": 2,
+  "review_note": "No se recibió SRC-ORU-2026-111; el caso queda con cinco fuentes. La contradicción de hora de Oruro no copia las horas en el JSON. El desplazamiento de la cerca no incluye una dirección que ninguna fuente afirma.",
+  "cases": [
+    {
+      "case_id": "SYN-SCZ-2026-004",
+      "cud": "CUD-SYN-884422-SCZ",
+      "department": "Santa Cruz",
+      "report_date": "2026-05-12",
+      "subjects": [
+        {
+          "name": "Elena Rojas",
+          "document_type": "CI",
+          "document_number": "1234567",
+          "role": "denunciante"
+        },
+        {
+          "name": "Marcos Lora",
+          "document_type": "CI",
+          "document_number": "7654321",
+          "role": "investigado"
+        }
+      ],
+      "legal_status": null,
+      "objective": "Reporte de antecedentes sobre alteración de linderos en predio agrícola.",
+      "facts": [
+        "Existe una disputa por el límite de un terreno ubicado en la zona este.",
+        "Elena Rojas señala que Marcos Lora alteró la división física entre ambas propiedades."
+      ],
+      "missing_fields": [],
+      "contradictions": [],
+      "source_ids": [
+        "SRC-SCZ-2026-101",
+        "SRC-SCZ-2026-102",
+        "SRC-SCZ-2026-103",
+        "SRC-SCZ-2026-104",
+        "SRC-SCZ-2026-105"
+      ],
+      "evaluation_key": {
+        "relevant_source_ids": [
+          "SRC-SCZ-2026-101",
+          "SRC-SCZ-2026-102"
+        ],
+        "required_facts": [
+          "Existe una disputa por el límite de un terreno ubicado en la zona este.",
+          "Elena Rojas señala que Marcos Lora alteró la división física entre ambas propiedades."
+        ],
+        "source_only_facts": [
+          {
+            "fact_id": "SYN-SCZ-2026-004-F1",
+            "text": "La separación física perimetral estaba construida con alambre de púas.",
+            "source_id": "SRC-SCZ-2026-101"
+          },
+          {
+            "fact_id": "SYN-SCZ-2026-004-F2",
+            "text": "La estructura divisoria fue desplazada una distancia de 5 metros.",
+            "source_id": "SRC-SCZ-2026-102",
+            "combines_with": ["SYN-SCZ-2026-004-F1"],
+            "combined_reading": "La separación de alambre de púas fue desplazada 5 metros."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "SYN-ORU-2026-005",
+      "cud": "CUD-SYN-553311-ORU",
+      "department": "Oruro",
+      "report_date": "2026-08-20",
+      "subjects": [
+        {
+          "name": "Fernando Silva",
+          "document_type": "CI",
+          "document_number": "2223334",
+          "role": "denunciante"
+        },
+        {
+          "name": "Patricia Soto",
+          "document_type": "CI",
+          "document_number": "5556667",
+          "role": "investigada"
+        }
+      ],
+      "legal_status": null,
+      "objective": "Reporte de incidente de tránsito con daños a vehículo estacionado.",
+      "facts": [
+        "Se registraron daños materiales en el parachoques trasero de un vehículo particular sedán de color azul.",
+        "Fernando Silva indica que el daño fue ocasionado por Patricia Soto mientras realizaba una maniobra."
+      ],
+      "missing_fields": [],
+      "contradictions": [
+        "Las dos fuentes pertinentes no coinciden en la hora del incidente."
+      ],
+      "source_ids": [
+        "SRC-ORU-2026-106",
+        "SRC-ORU-2026-107",
+        "SRC-ORU-2026-108",
+        "SRC-ORU-2026-109",
+        "SRC-ORU-2026-110"
+      ],
+      "evaluation_key": {
+        "relevant_source_ids": [
+          "SRC-ORU-2026-106",
+          "SRC-ORU-2026-107"
+        ],
+        "required_facts": [
+          "Se registraron daños materiales en el parachoques trasero de un vehículo particular sedán de color azul.",
+          "Fernando Silva indica que el daño fue ocasionado por Patricia Soto mientras realizaba una maniobra."
+        ],
+        "source_only_facts": [
+          {
+            "fact_id": "SYN-ORU-2026-005-F1",
+            "text": "El automóvil afectado tiene una placa de circulación que termina en los dígitos 99.",
+            "source_id": "SRC-ORU-2026-106"
+          },
+          {
+            "fact_id": "SYN-ORU-2026-005-F2",
+            "text": "El vehículo reportado en el incidente corresponde al año de fabricación 2015.",
+            "source_id": "SRC-ORU-2026-107",
+            "combines_with": ["SYN-ORU-2026-005-F1"],
+            "combined_reading": "El sedán azul del incidente es del año 2015 y su placa termina en 99."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "SYN-POT-2026-006",
+      "cud": "CUD-SYN-119977-POT",
+      "department": "Potosí",
+      "report_date": "2026-11-05",
+      "subjects": [
+        {
+          "name": "Javier Pinto",
+          "document_type": "CI",
+          "document_number": "1112223",
+          "role": "denunciante"
+        },
+        {
+          "name": "Luis Mendieta",
+          "document_type": "CI",
+          "document_number": "4445556",
+          "role": "investigado"
+        }
+      ],
+      "legal_status": null,
+      "objective": "Reporte sobre pérdida o sustracción de equipo en instalaciones administrativas.",
+      "facts": [
+        "Javier Pinto reporta la desaparición de un equipo de trabajo asignado a las oficinas centrales.",
+        "Se menciona a Luis Mendieta como la última persona que tuvo acceso al lugar del resguardo."
+      ],
+      "missing_fields": [
+        "No está especificado qué tipo de equipo desapareció.",
+        "No está determinada la fecha ni la hora de la desaparición."
+      ],
+      "contradictions": [],
+      "source_ids": [
+        "SRC-POT-2026-112",
+        "SRC-POT-2026-113",
+        "SRC-POT-2026-114",
+        "SRC-POT-2026-115",
+        "SRC-POT-2026-116"
+      ],
+      "evaluation_key": {
+        "relevant_source_ids": [
+          "SRC-POT-2026-112",
+          "SRC-POT-2026-113"
+        ],
+        "required_facts": [
+          "Javier Pinto reporta la desaparición de un equipo de trabajo asignado a las oficinas centrales.",
+          "Se menciona a Luis Mendieta como la última persona que tuvo acceso al lugar del resguardo."
+        ],
+        "source_only_facts": [
+          {
+            "fact_id": "SYN-POT-2026-006-F1",
+            "text": "Las oficinas afectadas se encuentran en el tercer piso del edificio central.",
+            "source_id": "SRC-POT-2026-112"
+          },
+          {
+            "fact_id": "SYN-POT-2026-006-F2",
+            "text": "El responsable de seguridad en la ronda era el guardia de apellido Ramos.",
+            "source_id": "SRC-POT-2026-113",
+            "combines_with": ["SYN-POT-2026-006-F1"],
+            "combined_reading": "El guardia Ramos realizó la ronda vinculada a las oficinas del tercer piso."
+          }
+        ]
+      }
+    }
+  ]
+}

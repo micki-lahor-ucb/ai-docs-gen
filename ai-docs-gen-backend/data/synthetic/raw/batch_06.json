@@ -1,0 +1,184 @@
+{
+  "_label": "DOCUMENTO SINTÉTICO PARA EVALUACIÓN ACADÉMICA — NO CORRESPONDE A UN CASO REAL",
+  "batch": 6,
+  "review_note": "La hora de la colisión de Potosí no se copia en el JSON. La altura del muro y la pintura azul quedan en fuentes distintas. La situación jurídica se conserva con el texto de la fuente: aprehendido de manera temporal.",
+  "cases": [
+    {
+      "case_id": "SYN-ORU-2026-016",
+      "cud": "CUD-SYN-9191-1234",
+      "department": "Oruro",
+      "report_date": "2026-10-15",
+      "subjects": [
+        {
+          "name": "Carlos Enrique Peñaranda",
+          "document_type": "CI",
+          "document_number": "55443322",
+          "role": "denunciante"
+        },
+        {
+          "name": "Luis Alberto Choque",
+          "document_type": "CI",
+          "document_number": "77889900",
+          "role": "denunciado"
+        }
+      ],
+      "legal_status": "Aprehendido de manera temporal",
+      "objective": "Verificar antecedentes sobre un altercado por linderos.",
+      "facts": [
+        "Carlos Enrique Peñaranda figura como denunciante en el caso.",
+        "Luis Alberto Choque asume el rol de denunciado."
+      ],
+      "missing_fields": [],
+      "contradictions": [],
+      "source_ids": [
+        "SRC-ORU-2026-050",
+        "SRC-ORU-2026-051",
+        "SRC-ORU-2026-052",
+        "SRC-ORU-2026-053",
+        "SRC-ORU-2026-054"
+      ],
+      "evaluation_key": {
+        "relevant_source_ids": [
+          "SRC-ORU-2026-050",
+          "SRC-ORU-2026-052"
+        ],
+        "required_facts": [
+          "Carlos Enrique Peñaranda figura como denunciante en el caso.",
+          "Luis Alberto Choque asume el rol de denunciado."
+        ],
+        "source_only_facts": [
+          {
+            "fact_id": "SYN-ORU-2026-016-F1",
+            "text": "El muro en disputa mide 3 metros de altura.",
+            "source_id": "SRC-ORU-2026-050"
+          },
+          {
+            "fact_id": "SYN-ORU-2026-016-F2",
+            "text": "El muro en disputa fue pintado de color azul recientemente.",
+            "source_id": "SRC-ORU-2026-052",
+            "combines_with": ["SYN-ORU-2026-016-F1"],
+            "combined_reading": "El muro de 3 metros de altura fue pintado de color azul recientemente."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "SYN-POT-2026-017",
+      "cud": "CUD-SYN-8282-5678",
+      "department": "Potosí",
+      "report_date": "2026-10-16",
+      "subjects": [
+        {
+          "name": "María Teresa Flores",
+          "document_type": "CI",
+          "document_number": "33221100",
+          "role": "propietaria"
+        },
+        {
+          "name": "Juan Pablo Rojas",
+          "document_type": "CI",
+          "document_number": "66554433",
+          "role": "conductor"
+        }
+      ],
+      "legal_status": null,
+      "objective": "Reporte de colisión de vehículo.",
+      "facts": [
+        "María Teresa Flores está registrada como propietaria.",
+        "Juan Pablo Rojas figura como conductor."
+      ],
+      "missing_fields": [],
+      "contradictions": [
+        "Las dos fuentes pertinentes no coinciden en la hora de la colisión."
+      ],
+      "source_ids": [
+        "SRC-POT-2026-060",
+        "SRC-POT-2026-061",
+        "SRC-POT-2026-062",
+        "SRC-POT-2026-063",
+        "SRC-POT-2026-064"
+      ],
+      "evaluation_key": {
+        "relevant_source_ids": [
+          "SRC-POT-2026-061",
+          "SRC-POT-2026-063"
+        ],
+        "required_facts": [
+          "María Teresa Flores está registrada como propietaria.",
+          "Juan Pablo Rojas figura como conductor."
+        ],
+        "source_only_facts": [
+          {
+            "fact_id": "SYN-POT-2026-017-F1",
+            "text": "El vehículo afectado porta la placa 123-XYZ.",
+            "source_id": "SRC-POT-2026-061"
+          },
+          {
+            "fact_id": "SYN-POT-2026-017-F2",
+            "text": "El vehículo 123-XYZ es un sedán gris.",
+            "source_id": "SRC-POT-2026-063",
+            "combines_with": ["SYN-POT-2026-017-F1"],
+            "combined_reading": "El vehículo afectado de placa 123-XYZ es un sedán gris."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "SYN-TAR-2026-018",
+      "cud": "CUD-SYN-7373-9012",
+      "department": "Tarija",
+      "report_date": "2026-10-17",
+      "subjects": [
+        {
+          "name": "Víctor Hugo Guzmán",
+          "document_type": "CI",
+          "document_number": "99887766",
+          "role": "custodio"
+        }
+      ],
+      "legal_status": null,
+      "objective": "Verificación de pérdida de equipo informático.",
+      "facts": [
+        "Víctor Hugo Guzmán tiene el rol de custodio.",
+        "El objetivo es la verificación de la pérdida de un equipo informático."
+      ],
+      "missing_fields": [
+        "Identificación exacta del equipo extraviado",
+        "Fecha exacta del extravío",
+        "Lugar específico de los hechos"
+      ],
+      "contradictions": [],
+      "source_ids": [
+        "SRC-TAR-2026-070",
+        "SRC-TAR-2026-071",
+        "SRC-TAR-2026-072",
+        "SRC-TAR-2026-073",
+        "SRC-TAR-2026-074"
+      ],
+      "evaluation_key": {
+        "relevant_source_ids": [
+          "SRC-TAR-2026-070",
+          "SRC-TAR-2026-074"
+        ],
+        "required_facts": [
+          "Víctor Hugo Guzmán tiene el rol de custodio.",
+          "El objetivo es la verificación de la pérdida de un equipo informático."
+        ],
+        "source_only_facts": [
+          {
+            "fact_id": "SYN-TAR-2026-018-F1",
+            "text": "El inventario en cuestión corresponde a la gestión 2025.",
+            "source_id": "SRC-TAR-2026-070"
+          },
+          {
+            "fact_id": "SYN-TAR-2026-018-F2",
+            "text": "El responsable del inventario 2025 era el supervisor de área.",
+            "source_id": "SRC-TAR-2026-074",
+            "combines_with": ["SYN-TAR-2026-018-F1"],
+            "combined_reading": "El supervisor de área era el responsable directo del inventario de la gestión 2025."
+          }
+        ]
+      }
+    }
+  ]
+}

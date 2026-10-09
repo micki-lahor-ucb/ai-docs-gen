@@ -1,0 +1,184 @@
+{
+  "_label": "DOCUMENTO SINTÉTICO PARA EVALUACIÓN ACADÉMICA — NO CORRESPONDE A UN CASO REAL",
+  "batch": 7,
+  "review_note": "Las horas del lindero de Pando no se copian en el JSON. La camioneta y el color blanco quedan en fuentes distintas. La mochila y el color negro quedan en fuentes distintas. El documento de Elena Marcela Vaca se cambió porque 44556677 ya estaba usado.",
+  "cases": [
+    {
+      "case_id": "SYN-BEN-2026-019",
+      "cud": "CUD-SYN-8888-00019",
+      "department": "Beni",
+      "report_date": "2026-10-09",
+      "subjects": [
+        {
+          "name": "Javier Antonio Mendieta",
+          "document_type": "CI",
+          "document_number": "11223344",
+          "role": "conductor"
+        },
+        {
+          "name": "Roberto Claros",
+          "document_type": "CI",
+          "document_number": "22334455",
+          "role": "propietario afectado"
+        }
+      ],
+      "legal_status": "Bajo investigación preliminar",
+      "objective": "Reporte de antecedentes sobre incidente de tránsito y daños materiales.",
+      "facts": [
+        "Hubo una colisión de un vehículo contra un muro perimetral."
+      ],
+      "missing_fields": [],
+      "contradictions": [],
+      "source_ids": [
+        "SRC-BEN-2026-101",
+        "SRC-BEN-2026-102",
+        "SRC-BEN-2026-103",
+        "SRC-BEN-2026-104",
+        "SRC-BEN-2026-105"
+      ],
+      "evaluation_key": {
+        "relevant_source_ids": [
+          "SRC-BEN-2026-101",
+          "SRC-BEN-2026-102"
+        ],
+        "required_facts": [
+          "Hubo una colisión de un vehículo contra un muro perimetral."
+        ],
+        "source_only_facts": [
+          {
+            "fact_id": "SYN-BEN-2026-019-F1",
+            "text": "Javier Antonio Mendieta conducía una camioneta.",
+            "source_id": "SRC-BEN-2026-101"
+          },
+          {
+            "fact_id": "SYN-BEN-2026-019-F2",
+            "text": "El vehículo responsable del impacto era de color blanco.",
+            "source_id": "SRC-BEN-2026-102",
+            "combines_with": ["SYN-BEN-2026-019-F1"],
+            "combined_reading": "El vehículo involucrado es una camioneta de color blanco."
+          },
+          {
+            "fact_id": "SYN-BEN-2026-019-F3",
+            "text": "El costo estimado de reparación del muro asciende a 5000 Bs.",
+            "source_id": "SRC-BEN-2026-102"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "SYN-PAN-2026-020",
+      "cud": "CUD-SYN-8888-00020",
+      "department": "Pando",
+      "report_date": "2026-10-09",
+      "subjects": [
+        {
+          "name": "Elena Marcela Vaca",
+          "document_type": "CI",
+          "document_number": "33445566",
+          "role": "denunciante"
+        },
+        {
+          "name": "Miguel Ángel Dorado",
+          "document_type": "CI",
+          "document_number": "55667788",
+          "role": "denunciado"
+        }
+      ],
+      "legal_status": null,
+      "objective": "Reporte de antecedentes sobre conflicto de linderos.",
+      "facts": [
+        "Hay una disputa por la remoción de la delimitación de un terreno."
+      ],
+      "missing_fields": [],
+      "contradictions": [
+        "Las dos fuentes pertinentes no coinciden en la hora del incidente."
+      ],
+      "source_ids": [
+        "SRC-PAN-2026-106",
+        "SRC-PAN-2026-107",
+        "SRC-PAN-2026-108",
+        "SRC-PAN-2026-109",
+        "SRC-PAN-2026-110"
+      ],
+      "evaluation_key": {
+        "relevant_source_ids": [
+          "SRC-PAN-2026-106",
+          "SRC-PAN-2026-107"
+        ],
+        "required_facts": [
+          "Hay una disputa por la remoción de la delimitación de un terreno."
+        ],
+        "source_only_facts": [
+          {
+            "fact_id": "SYN-PAN-2026-020-F1",
+            "text": "Se removió el alambre que marcaba la división exacta de su propiedad.",
+            "source_id": "SRC-PAN-2026-106"
+          },
+          {
+            "fact_id": "SYN-PAN-2026-020-F2",
+            "text": "Se contrató a un topógrafo para realizar mediciones.",
+            "source_id": "SRC-PAN-2026-107"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "SYN-PAN-2026-021",
+      "cud": "CUD-SYN-8888-00021",
+      "department": "Pando",
+      "report_date": "2026-10-09",
+      "subjects": [
+        {
+          "name": "Sofía Lorena Morales",
+          "document_type": "CI",
+          "document_number": "88990011",
+          "role": "custodio"
+        }
+      ],
+      "legal_status": null,
+      "objective": "Reporte de antecedentes sobre pérdida de equipo informático.",
+      "facts": [
+        "Se extraviaron bienes asignados en las instalaciones de la oficina."
+      ],
+      "missing_fields": [
+        "No se especifica el número de serie ni la marca del equipo perdido."
+      ],
+      "contradictions": [],
+      "source_ids": [
+        "SRC-PAN-2026-111",
+        "SRC-PAN-2026-112",
+        "SRC-PAN-2026-113",
+        "SRC-PAN-2026-114",
+        "SRC-PAN-2026-115"
+      ],
+      "evaluation_key": {
+        "relevant_source_ids": [
+          "SRC-PAN-2026-111",
+          "SRC-PAN-2026-112"
+        ],
+        "required_facts": [
+          "Se extraviaron bienes asignados en las instalaciones de la oficina."
+        ],
+        "source_only_facts": [
+          {
+            "fact_id": "SYN-PAN-2026-021-F1",
+            "text": "El equipo informático fue dejado dentro de una mochila.",
+            "source_id": "SRC-PAN-2026-111"
+          },
+          {
+            "fact_id": "SYN-PAN-2026-021-F2",
+            "text": "La funcionaria ingresó portando una mochila de color negro.",
+            "source_id": "SRC-PAN-2026-112",
+            "combines_with": ["SYN-PAN-2026-021-F1"],
+            "combined_reading": "El equipo informático fue dejado dentro de una mochila de color negro."
+          },
+          {
+            "fact_id": "SYN-PAN-2026-021-F3",
+            "text": "La puerta de la oficina fue encontrada sin llave.",
+            "source_id": "SRC-PAN-2026-111"
+          }
+        ]
+      }
+    }
+  ]
+}

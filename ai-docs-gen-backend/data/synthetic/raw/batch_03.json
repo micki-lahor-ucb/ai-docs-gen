@@ -1,0 +1,193 @@
+{
+  "_label": "DOCUMENTO SINTÉTICO PARA EVALUACIÓN ACADÉMICA — NO CORRESPONDE A UN CASO REAL",
+  "batch": 3,
+  "review_note": "La discrepancia de hora de Beni no copia las horas en el JSON. Los números de documento de Marina Velez y Oscar Duran se cambiaron porque repetían los de Elena Rojas y Marcos Lora.",
+  "cases": [
+    {
+      "case_id": "SYN-TAR-2026-007",
+      "cud": "CUD-SYN-XW44L-TAR",
+      "department": "Tarija",
+      "report_date": "2026-10-09",
+      "subjects": [
+        {
+          "name": "Marina Velez",
+          "document_type": "CI",
+          "document_number": "3344558",
+          "role": "denunciante"
+        },
+        {
+          "name": "Oscar Duran",
+          "document_type": "CI",
+          "document_number": "6677880",
+          "role": "denunciado"
+        }
+      ],
+      "legal_status": null,
+      "objective": "Emitir informe de antecedentes sobre conflicto de lindero entre propiedades contiguas.",
+      "facts": [
+        "Existe un conflicto por la delimitación del lindero que separa las propiedades.",
+        "La denunciante afirma que el denunciado ha invadido su terreno.",
+        "Se solicitó una inspección técnica al lugar."
+      ],
+      "missing_fields": [
+        "Resolución municipal de delimitación",
+        "Títulos de propiedad actualizados"
+      ],
+      "contradictions": [],
+      "source_ids": [
+        "SRC-TAR-2026-001",
+        "SRC-TAR-2026-002",
+        "SRC-TAR-2026-003",
+        "SRC-TAR-2026-004",
+        "SRC-TAR-2026-005"
+      ],
+      "evaluation_key": {
+        "relevant_source_ids": [
+          "SRC-TAR-2026-001",
+          "SRC-TAR-2026-002"
+        ],
+        "required_facts": [
+          "Existe un conflicto por la delimitación del lindero que separa las propiedades.",
+          "La denunciante afirma que el denunciado ha invadido su terreno."
+        ],
+        "source_only_facts": [
+          {
+            "fact_id": "SYN-TAR-2026-007-F1",
+            "text": "El muro divisorio en disputa está pintado de color verde.",
+            "source_id": "SRC-TAR-2026-001"
+          },
+          {
+            "fact_id": "SYN-TAR-2026-007-F2",
+            "text": "La construcción del cerco verde finalizó en el año 2024.",
+            "source_id": "SRC-TAR-2026-002",
+            "combines_with": ["SYN-TAR-2026-007-F1"],
+            "combined_reading": "El cerco divisorio de color verde se construyó en 2024."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "SYN-BEN-2026-008",
+      "cud": "CUD-SYN-PL99Z-BEN",
+      "department": "Beni",
+      "report_date": "2026-10-09",
+      "subjects": [
+        {
+          "name": "Samuel Quiroga",
+          "document_type": "CI",
+          "document_number": "8888888",
+          "role": "conductor"
+        },
+        {
+          "name": "Teresa Mendiola",
+          "document_type": "CI",
+          "document_number": "9999999",
+          "role": "peatón"
+        }
+      ],
+      "legal_status": null,
+      "objective": "Recabar antecedentes sobre un incidente de tránsito que involucra a un vehículo y un peatón.",
+      "facts": [
+        "El incidente involucró un vehículo particular y un peatón en una intersección.",
+        "El conductor permaneció en el lugar tras el hecho.",
+        "Se requiere la revisión de cámaras de seguridad del sector."
+      ],
+      "missing_fields": [
+        "Informe médico forense",
+        "Prueba de alcoholemia"
+      ],
+      "contradictions": [
+        "Las dos fuentes pertinentes no coinciden en la hora del incidente."
+      ],
+      "source_ids": [
+        "SRC-BEN-2026-006",
+        "SRC-BEN-2026-007",
+        "SRC-BEN-2026-008",
+        "SRC-BEN-2026-009",
+        "SRC-BEN-2026-010"
+      ],
+      "evaluation_key": {
+        "relevant_source_ids": [
+          "SRC-BEN-2026-006",
+          "SRC-BEN-2026-007"
+        ],
+        "required_facts": [
+          "El incidente involucró un vehículo particular y un peatón en una intersección.",
+          "El conductor permaneció en el lugar tras el hecho."
+        ],
+        "source_only_facts": [
+          {
+            "fact_id": "SYN-BEN-2026-008-F1",
+            "text": "El vehículo transportaba materiales de construcción en su cajuela.",
+            "source_id": "SRC-BEN-2026-006"
+          },
+          {
+            "fact_id": "SYN-BEN-2026-008-F2",
+            "text": "El material transportado correspondía a bolsas de cemento.",
+            "source_id": "SRC-BEN-2026-007",
+            "combines_with": ["SYN-BEN-2026-008-F1"],
+            "combined_reading": "El vehículo involucrado transportaba bolsas de cemento como material de construcción."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "SYN-PAN-2026-009",
+      "cud": "CUD-SYN-KM55Q-PAN",
+      "department": "Pando",
+      "report_date": "2026-10-09",
+      "subjects": [
+        {
+          "name": "Hugo Salazar",
+          "document_type": "CI",
+          "document_number": "1111111",
+          "role": "custodio"
+        }
+      ],
+      "legal_status": null,
+      "objective": "Documentar la desaparición de un equipo de oficina asignado a custodia.",
+      "facts": [
+        "Se reportó la ausencia de un equipo de oficina del área administrativa.",
+        "El custodio asignado desconoce el momento exacto en que el equipo fue retirado.",
+        "No se encontraron signos de fuerza en los accesos al área."
+      ],
+      "missing_fields": [
+        "Fecha y hora exacta de la desaparición",
+        "Ubicación actual del equipo",
+        "Acta de entrega original"
+      ],
+      "contradictions": [],
+      "source_ids": [
+        "SRC-PAN-2026-011",
+        "SRC-PAN-2026-012",
+        "SRC-PAN-2026-013",
+        "SRC-PAN-2026-014",
+        "SRC-PAN-2026-015"
+      ],
+      "evaluation_key": {
+        "relevant_source_ids": [
+          "SRC-PAN-2026-011",
+          "SRC-PAN-2026-012"
+        ],
+        "required_facts": [
+          "Se reportó la ausencia de un equipo de oficina del área administrativa.",
+          "No se encontraron signos de fuerza en los accesos al área."
+        ],
+        "source_only_facts": [
+          {
+            "fact_id": "SYN-PAN-2026-009-F1",
+            "text": "El equipo de oficina extraviado portaba una etiqueta de inventario de color rojo.",
+            "source_id": "SRC-PAN-2026-011"
+          },
+          {
+            "fact_id": "SYN-PAN-2026-009-F2",
+            "text": "La etiqueta de inventario del equipo desaparecido llevaba impreso el código INV-99.",
+            "source_id": "SRC-PAN-2026-012",
+            "combines_with": ["SYN-PAN-2026-009-F1"],
+            "combined_reading": "El equipo de oficina extraviado portaba una etiqueta de inventario de color rojo con el código INV-99."
+          }
+        ]
+      }
+    }
+  ]
+}

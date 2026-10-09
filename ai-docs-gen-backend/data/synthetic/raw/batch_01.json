@@ -1,0 +1,191 @@
+{
+  "_label": "DOCUMENTO SINTÉTICO PARA EVALUACIÓN ACADÉMICA — NO CORRESPONDE A UN CASO REAL",
+  "batch": 1,
+  "review_note": "Identificador SRC-CHQ-2026-002 asignado al segundo documento de Chuquisaca. Los hechos que se arman con dos fuentes quedaron partidos en las frases de cada fuente. La contradicción de hora de La Paz no copia las horas en el JSON.",
+  "cases": [
+    {
+      "case_id": "SYN-CHQ-2026-001",
+      "cud": "CUD-SYN-912-XYA-001",
+      "department": "Chuquisaca",
+      "report_date": "2026-10-09",
+      "subjects": [
+        {
+          "name": "Carlos Medina",
+          "document_type": "CI",
+          "document_number": "4455667",
+          "role": "investigado"
+        }
+      ],
+      "legal_status": null,
+      "objective": "Determinar las circunstancias de la desaparición y posterior hallazgo de un equipo de inventario.",
+      "facts": [
+        "El 12 de marzo de 2026 se reportó la pérdida de un equipo portátil asignado a Carlos Medina.",
+        "La revisión inicial del inventario confirmó la falta del dispositivo en su escritorio habitual."
+      ],
+      "missing_fields": [],
+      "contradictions": [],
+      "source_ids": [
+        "SRC-CHQ-2026-001",
+        "SRC-CHQ-2026-002",
+        "SRC-CHQ-2026-003",
+        "SRC-CHQ-2026-004",
+        "SRC-CHQ-2026-005"
+      ],
+      "evaluation_key": {
+        "relevant_source_ids": [
+          "SRC-CHQ-2026-001",
+          "SRC-CHQ-2026-002"
+        ],
+        "required_facts": [
+          "El 12 de marzo de 2026 se reportó la pérdida de un equipo portátil asignado a Carlos Medina.",
+          "La revisión inicial del inventario confirmó la falta del dispositivo en su escritorio habitual."
+        ],
+        "source_only_facts": [
+          {
+            "fact_id": "SYN-CHQ-2026-001-F1",
+            "text": "Al momento del hallazgo el equipo estaba cubierto por una lona azul.",
+            "source_id": "SRC-CHQ-2026-001"
+          },
+          {
+            "fact_id": "SYN-CHQ-2026-001-F2",
+            "text": "El equipo portátil con serial terminado en 8X fue hallado en el tercer piso.",
+            "source_id": "SRC-CHQ-2026-001"
+          },
+          {
+            "fact_id": "SYN-CHQ-2026-001-F3",
+            "text": "El tercer piso del edificio principal está asignado a la sala de mantenimiento informático.",
+            "source_id": "SRC-CHQ-2026-002",
+            "combines_with": ["SYN-CHQ-2026-001-F2"],
+            "combined_reading": "El equipo con serial terminado en 8X fue hallado en la sala de mantenimiento informático."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "SYN-LPZ-2026-002",
+      "cud": "CUD-SYN-432-TRZ-002",
+      "department": "La Paz",
+      "report_date": "2026-10-09",
+      "subjects": [
+        {
+          "name": "Lucia Vargas",
+          "document_type": "CI",
+          "document_number": "8899001",
+          "role": "denunciante"
+        },
+        {
+          "name": "Roberto Tapia",
+          "document_type": "CI",
+          "document_number": "2233445",
+          "role": "denunciado"
+        }
+      ],
+      "legal_status": null,
+      "objective": "Documentar la inspección sobre el terreno en disputa y las alteraciones al lindero.",
+      "facts": [
+        "Lucia Vargas y Roberto Tapia mantienen una discrepancia sobre la misma franja de terreno.",
+        "Se programó una verificación presencial para constatar los daños en el lindero el 5 de octubre de 2026."
+      ],
+      "missing_fields": [],
+      "contradictions": [
+        "Las dos fuentes pertinentes no coinciden en la hora de la inspección del 5 de octubre de 2026."
+      ],
+      "source_ids": [
+        "SRC-LPZ-2026-006",
+        "SRC-LPZ-2026-007",
+        "SRC-LPZ-2026-008",
+        "SRC-LPZ-2026-009",
+        "SRC-LPZ-2026-010"
+      ],
+      "evaluation_key": {
+        "relevant_source_ids": [
+          "SRC-LPZ-2026-007",
+          "SRC-LPZ-2026-008"
+        ],
+        "required_facts": [
+          "Lucia Vargas y Roberto Tapia mantienen una discrepancia sobre la misma franja de terreno.",
+          "Se programó una verificación presencial para constatar los daños en el lindero el 5 de octubre de 2026."
+        ],
+        "source_only_facts": [
+          {
+            "fact_id": "SYN-LPZ-2026-002-F1",
+            "text": "Un perro callejero merodeaba en el lugar durante la inspección.",
+            "source_id": "SRC-LPZ-2026-007"
+          },
+          {
+            "fact_id": "SYN-LPZ-2026-002-F2",
+            "text": "Una cerca de madera del lindero fue destruida.",
+            "source_id": "SRC-LPZ-2026-007"
+          },
+          {
+            "fact_id": "SYN-LPZ-2026-002-F3",
+            "text": "La estructura destruida del lindero estaba pintada de color verde.",
+            "source_id": "SRC-LPZ-2026-008",
+            "combines_with": ["SYN-LPZ-2026-002-F2"],
+            "combined_reading": "La cerca de madera destruida estaba pintada de color verde."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "SYN-CBB-2026-003",
+      "cud": "CUD-SYN-765-PQR-003",
+      "department": "Cochabamba",
+      "report_date": "2026-10-09",
+      "subjects": [
+        {
+          "name": "Jorge Blanco",
+          "document_type": "CI",
+          "document_number": "1122334",
+          "role": "conductor"
+        }
+      ],
+      "legal_status": null,
+      "objective": "Evaluar la participación y el nivel de autorización del conductor durante el incidente de tránsito.",
+      "facts": [
+        "Ocurrió una colisión que involucró a un vehículo del parque automotor.",
+        "El señor Jorge Blanco se encontraba físicamente en el lugar tras el incidente."
+      ],
+      "missing_fields": [
+        "No existe evidencia que confirme o niegue si Jorge Blanco tenía autorización formal para conducir el vehículo."
+      ],
+      "contradictions": [],
+      "source_ids": [
+        "SRC-CBB-2026-011",
+        "SRC-CBB-2026-012",
+        "SRC-CBB-2026-013",
+        "SRC-CBB-2026-014",
+        "SRC-CBB-2026-015"
+      ],
+      "evaluation_key": {
+        "relevant_source_ids": [
+          "SRC-CBB-2026-011",
+          "SRC-CBB-2026-015"
+        ],
+        "required_facts": [
+          "Ocurrió una colisión que involucró a un vehículo del parque automotor.",
+          "El señor Jorge Blanco se encontraba físicamente en el lugar tras el incidente."
+        ],
+        "source_only_facts": [
+          {
+            "fact_id": "SYN-CBB-2026-003-F1",
+            "text": "El vehículo presenta una abolladura en la puerta izquierda.",
+            "source_id": "SRC-CBB-2026-011"
+          },
+          {
+            "fact_id": "SYN-CBB-2026-003-F2",
+            "text": "Las llaves del vehículo fueron dejadas sobre el tablero de instrumentos.",
+            "source_id": "SRC-CBB-2026-011"
+          },
+          {
+            "fact_id": "SYN-CBB-2026-003-F3",
+            "text": "El motorizado con la puerta abollada es una camioneta blanca.",
+            "source_id": "SRC-CBB-2026-015",
+            "combines_with": ["SYN-CBB-2026-003-F1"],
+            "combined_reading": "El vehículo dañado es una camioneta blanca con una abolladura en la puerta izquierda."
+          }
+        ]
+      }
+    }
+  ]
+}

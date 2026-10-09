@@ -1,0 +1,16 @@
+{
+  "seed": 42,
+  "case_count": 24,
+  "source_count": 121,
+  "approximate_source_words": 14191,
+  "development_count": 16,
+  "test_count": 8,
+  "origin": "Textos sintéticos elaborados para este prototipo y revisados por el autor.",
+  "seed_scope": "SEED=42 fija la validación de la construcción y la partición por caso. No regenera los textos fuente, porque esos archivos ya están versionados.",
+  "limitations": [
+    "No representan expedientes reales.",
+    "El volumen es reducido y el resultado sobre la prueba es exploratorio.",
+    "Una sola persona revisó los textos.",
+    "La semilla no vuelve a redactar las fuentes."
+  ]
+}

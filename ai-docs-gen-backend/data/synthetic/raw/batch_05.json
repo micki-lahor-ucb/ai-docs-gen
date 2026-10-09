@@ -1,0 +1,165 @@
+{
+  "_label": "DOCUMENTO SINTÉTICO PARA EVALUACIÓN ACADÉMICA — NO CORRESPONDE A UN CASO REAL",
+  "batch": 5,
+  "review_note": "La marca BuildTech y la pintura azul quedan en fuentes distintas. El daño de la puerta y el monto de 500 quedan en fuentes distintas. El roble y la tala quedan en fuentes distintas. Las horas de la colisión no se copian en el JSON.",
+  "cases": [
+    {
+      "case_id": "SYN-SCZ-2026-013",
+      "cud": "CUD-SYN-99887766A",
+      "department": "Santa Cruz",
+      "report_date": "2026-10-15",
+      "subjects": [
+        {
+          "name": "Julio Fernando Salas",
+          "document_type": "CI",
+          "document_number": "10203040",
+          "role": "denunciante"
+        }
+      ],
+      "legal_status": null,
+      "objective": "Determinar los antecedentes sobre la pérdida de equipo de construcción.",
+      "facts": [
+        "El 12 de octubre de 2026 se reportó la pérdida de un equipo de construcción."
+      ],
+      "missing_fields": [],
+      "contradictions": [],
+      "source_ids": [
+        "SRC-SCZ-2026-020",
+        "SRC-SCZ-2026-021",
+        "SRC-SCZ-2026-022",
+        "SRC-SCZ-2026-023",
+        "SRC-SCZ-2026-024"
+      ],
+      "evaluation_key": {
+        "relevant_source_ids": [
+          "SRC-SCZ-2026-020",
+          "SRC-SCZ-2026-021"
+        ],
+        "required_facts": [
+          "El 12 de octubre de 2026 se reportó la pérdida de un equipo de construcción."
+        ],
+        "source_only_facts": [
+          {
+            "fact_id": "SYN-SCZ-2026-013-F1",
+            "text": "El equipo de construcción sustraído es una mezcladora marca BuildTech.",
+            "source_id": "SRC-SCZ-2026-020"
+          },
+          {
+            "fact_id": "SYN-SCZ-2026-013-F2",
+            "text": "El equipo fue hallado en un depósito y había sido alterado con pintura azul.",
+            "source_id": "SRC-SCZ-2026-021",
+            "combines_with": ["SYN-SCZ-2026-013-F1"],
+            "combined_reading": "La mezcladora marca BuildTech fue localizada en un depósito y estaba pintada de color azul."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "SYN-LPZ-2026-014",
+      "cud": "CUD-SYN-55667788B",
+      "department": "La Paz",
+      "report_date": "2026-10-16",
+      "subjects": [
+        {
+          "name": "Andrea Lucía Méndez",
+          "document_type": "CI",
+          "document_number": "80907060",
+          "role": "involucrada"
+        }
+      ],
+      "legal_status": null,
+      "objective": "Verificar las circunstancias de una colisión de vehículo.",
+      "facts": [
+        "Se registró una colisión de vehículo en una vía principal durante el día martes."
+      ],
+      "missing_fields": [],
+      "contradictions": [
+        "Las dos fuentes pertinentes no coinciden en la hora de la colisión."
+      ],
+      "source_ids": [
+        "SRC-LPZ-2026-030",
+        "SRC-LPZ-2026-031",
+        "SRC-LPZ-2026-032",
+        "SRC-LPZ-2026-033",
+        "SRC-LPZ-2026-034"
+      ],
+      "evaluation_key": {
+        "relevant_source_ids": [
+          "SRC-LPZ-2026-030",
+          "SRC-LPZ-2026-031"
+        ],
+        "required_facts": [
+          "Se registró una colisión de vehículo en una vía principal durante el día martes."
+        ],
+        "source_only_facts": [
+          {
+            "fact_id": "SYN-LPZ-2026-014-F1",
+            "text": "El impacto del vehículo afectó exclusivamente la puerta lateral derecha.",
+            "source_id": "SRC-LPZ-2026-030"
+          },
+          {
+            "fact_id": "SYN-LPZ-2026-014-F2",
+            "text": "La reparación requiere un reemplazo que asciende a 500 bolivianos ficticios.",
+            "source_id": "SRC-LPZ-2026-031",
+            "combines_with": ["SYN-LPZ-2026-014-F1"],
+            "combined_reading": "El daño en la puerta lateral derecha requiere un reemplazo de 500 bolivianos ficticios."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "SYN-CHQ-2026-015",
+      "cud": "CUD-SYN-11223344C",
+      "department": "Chuquisaca",
+      "report_date": "2026-10-17",
+      "subjects": [
+        {
+          "name": "Roberto Carlos Dávila",
+          "document_type": "CI",
+          "document_number": "50607080",
+          "role": "investigado"
+        }
+      ],
+      "legal_status": null,
+      "objective": "Establecer los detalles de un conflicto de lindero rural.",
+      "facts": [
+        "Se ha presentado un reclamo formal por un conflicto de lindero."
+      ],
+      "missing_fields": [
+        "Ubicación exacta del terreno en disputa.",
+        "Identidad del vecino colindante."
+      ],
+      "contradictions": [],
+      "source_ids": [
+        "SRC-CHQ-2026-040",
+        "SRC-CHQ-2026-041",
+        "SRC-CHQ-2026-042",
+        "SRC-CHQ-2026-043",
+        "SRC-CHQ-2026-044"
+      ],
+      "evaluation_key": {
+        "relevant_source_ids": [
+          "SRC-CHQ-2026-040",
+          "SRC-CHQ-2026-041"
+        ],
+        "required_facts": [
+          "Se ha presentado un reclamo formal por un conflicto de lindero."
+        ],
+        "source_only_facts": [
+          {
+            "fact_id": "SYN-CHQ-2026-015-F1",
+            "text": "El terreno en disputa posee un árbol de roble antiguo.",
+            "source_id": "SRC-CHQ-2026-040"
+          },
+          {
+            "fact_id": "SYN-CHQ-2026-015-F2",
+            "text": "El árbol en disputa fue talado de forma parcial durante el día de ayer.",
+            "source_id": "SRC-CHQ-2026-041",
+            "combines_with": ["SYN-CHQ-2026-015-F1"],
+            "combined_reading": "El árbol de roble antiguo del lindero fue parcialmente talado el día de ayer."
+          }
+        ]
+      }
+    }
+  ]
+}

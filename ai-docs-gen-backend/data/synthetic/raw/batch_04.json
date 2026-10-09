@@ -1,0 +1,197 @@
+{
+  "_label": "DOCUMENTO SINTÉTICO PARA EVALUACIÓN ACADÉMICA — NO CORRESPONDE A UN CASO REAL",
+  "batch": 4,
+  "review_note": "La hora de la colisión de La Paz no se copia en el JSON. El rasguño y la pintura roja quedan como frases de fuentes distintas. Se cambiaron los documentos 4455667 y 2233445 porque ya pertenecían a otras personas.",
+  "cases": [
+    {
+      "case_id": "SYN-CHQ-2026-010",
+      "cud": "CUD-SYN-9988-XQZ1",
+      "department": "Chuquisaca",
+      "report_date": "2026-05-18",
+      "subjects": [
+        {
+          "name": "Marcos Alipio Terrazas",
+          "document_type": "CI",
+          "document_number": "5544332",
+          "role": "investigado"
+        },
+        {
+          "name": "Ramiro Vedia Soto",
+          "document_type": "CI",
+          "document_number": "7788991",
+          "role": "denunciante"
+        }
+      ],
+      "legal_status": null,
+      "objective": "Establecer la ubicación y el estado de la maquinaria agrícola reportada como desaparecida el 14 de mayo de 2026.",
+      "facts": [
+        "Marcos Alipio Terrazas operaba regularmente el tractor verde en los terrenos agrícolas.",
+        "Ramiro Vedia Soto formalizó el reporte por la pérdida de la maquinaria el 14 de mayo de 2026."
+      ],
+      "missing_fields": [],
+      "contradictions": [],
+      "source_ids": [
+        "SRC-CHQ-2026-020",
+        "SRC-CHQ-2026-021",
+        "SRC-CHQ-2026-022",
+        "SRC-CHQ-2026-023",
+        "SRC-CHQ-2026-024"
+      ],
+      "evaluation_key": {
+        "relevant_source_ids": [
+          "SRC-CHQ-2026-020",
+          "SRC-CHQ-2026-021"
+        ],
+        "required_facts": [
+          "Marcos Alipio Terrazas operaba regularmente el tractor verde en los terrenos agrícolas.",
+          "Ramiro Vedia Soto formalizó el reporte por la pérdida de la maquinaria el 14 de mayo de 2026."
+        ],
+        "source_only_facts": [
+          {
+            "fact_id": "SYN-CHQ-2026-010-F1",
+            "text": "El tractor tenía un rasguño profundo en la puerta derecha.",
+            "source_id": "SRC-CHQ-2026-020"
+          },
+          {
+            "fact_id": "SYN-CHQ-2026-010-F2",
+            "text": "La marca de la puerta derecha fue remarcada deliberadamente con pintura roja.",
+            "source_id": "SRC-CHQ-2026-021",
+            "combines_with": ["SYN-CHQ-2026-010-F1"],
+            "combined_reading": "El rasguño profundo de la puerta derecha del tractor fue marcado con pintura roja."
+          },
+          {
+            "fact_id": "SYN-CHQ-2026-010-F3",
+            "text": "El terreno de la última inspección estaba completamente anegado por la lluvia.",
+            "source_id": "SRC-CHQ-2026-021"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "SYN-LPZ-2026-011",
+      "cud": "CUD-SYN-7766-LPM2",
+      "department": "La Paz",
+      "report_date": "2026-08-22",
+      "subjects": [
+        {
+          "name": "Valeria Pinto Morales",
+          "document_type": "CI",
+          "document_number": "3322110",
+          "role": "denunciada"
+        },
+        {
+          "name": "Carla Torres Lima",
+          "document_type": "CI",
+          "document_number": "9900112",
+          "role": "afectada"
+        }
+      ],
+      "legal_status": null,
+      "objective": "Determinar la cronología y las circunstancias de la colisión de vehículos en la avenida periférica.",
+      "facts": [
+        "Ocurrió una colisión frontal entre un sedán azul y una camioneta gris en la avenida periférica.",
+        "Ambas conductoras se encontraban en el lugar al momento de la llegada de la grúa."
+      ],
+      "missing_fields": [],
+      "contradictions": [
+        "Las dos fuentes pertinentes no coinciden en la hora de la colisión."
+      ],
+      "source_ids": [
+        "SRC-LPZ-2026-025",
+        "SRC-LPZ-2026-026",
+        "SRC-LPZ-2026-027",
+        "SRC-LPZ-2026-028",
+        "SRC-LPZ-2026-029"
+      ],
+      "evaluation_key": {
+        "relevant_source_ids": [
+          "SRC-LPZ-2026-025",
+          "SRC-LPZ-2026-026"
+        ],
+        "required_facts": [
+          "Ocurrió una colisión frontal entre un sedán azul y una camioneta gris en la avenida periférica.",
+          "Ambas conductoras se encontraban en el lugar al momento de la llegada de la grúa."
+        ],
+        "source_only_facts": [
+          {
+            "fact_id": "SYN-LPZ-2026-011-F1",
+            "text": "Una de las bolsas de la compra quedó tendida en medio del asfalto.",
+            "source_id": "SRC-LPZ-2026-025"
+          },
+          {
+            "fact_id": "SYN-LPZ-2026-011-F2",
+            "text": "El contenido de la bolsa esparcida en el asfalto eran decenas de manzanas verdes.",
+            "source_id": "SRC-LPZ-2026-026",
+            "combines_with": ["SYN-LPZ-2026-011-F1"],
+            "combined_reading": "La bolsa que quedó sobre el asfalto contenía manzanas verdes."
+          },
+          {
+            "fact_id": "SYN-LPZ-2026-011-F3",
+            "text": "El faro izquierdo del sedán azul resultó completamente destrozado tras el impacto.",
+            "source_id": "SRC-LPZ-2026-026"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "SYN-CBB-2026-012",
+      "cud": "CUD-SYN-5544-CBN3",
+      "department": "Cochabamba",
+      "report_date": "2026-11-05",
+      "subjects": [
+        {
+          "name": "Ernesto Cárdenas Ríos",
+          "document_type": "CI",
+          "document_number": "6655443",
+          "role": "investigado"
+        }
+      ],
+      "legal_status": null,
+      "objective": "Verificar la denuncia sobre alteración de linderos mediante movimiento de tierras en la propiedad agrícola colindante.",
+      "facts": [
+        "Se verificó un movimiento de tierras no autorizado en el límite este de la parcela."
+      ],
+      "missing_fields": [
+        "Identidad del denunciante",
+        "Fecha exacta de inicio de las excavaciones",
+        "Magnitud total de la alteración en metros cuadrados"
+      ],
+      "contradictions": [],
+      "source_ids": [
+        "SRC-CBB-2026-030",
+        "SRC-CBB-2026-031",
+        "SRC-CBB-2026-032",
+        "SRC-CBB-2026-033",
+        "SRC-CBB-2026-034"
+      ],
+      "evaluation_key": {
+        "relevant_source_ids": [
+          "SRC-CBB-2026-030",
+          "SRC-CBB-2026-031"
+        ],
+        "required_facts": [
+          "Se verificó un movimiento de tierras no autorizado en el límite este de la parcela."
+        ],
+        "source_only_facts": [
+          {
+            "fact_id": "SYN-CBB-2026-012-F1",
+            "text": "En el fondo de la zanja se halló una pala rota.",
+            "source_id": "SRC-CBB-2026-030"
+          },
+          {
+            "fact_id": "SYN-CBB-2026-012-F2",
+            "text": "La pala rota encontrada en la zanja estaba manchada con restos de cemento fresco.",
+            "source_id": "SRC-CBB-2026-031",
+            "combines_with": ["SYN-CBB-2026-012-F1"],
+            "combined_reading": "La pala rota del fondo de la zanja estaba manchada con cemento fresco."
+          },
+          {
+            "fact_id": "SYN-CBB-2026-012-F3",
+            "text": "El clima en la zona durante ese mes fue inusualmente seco.",
+            "source_id": "SRC-CBB-2026-031"
+          }
+        ]
+      }
+    }
+  ]
+}

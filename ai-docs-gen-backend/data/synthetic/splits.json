@@ -1,0 +1,31 @@
+{
+  "seed": 42,
+  "development": [
+    "SYN-PAN-2026-020",
+    "SYN-CHQ-2026-001",
+    "SYN-POT-2026-017",
+    "SYN-TAR-2026-018",
+    "SYN-ORU-2026-024",
+    "SYN-LPZ-2026-014",
+    "SYN-POT-2026-006",
+    "SYN-ORU-2026-005",
+    "SYN-PAN-2026-009",
+    "SYN-PAN-2026-021",
+    "SYN-BEN-2026-019",
+    "SYN-ORU-2026-016",
+    "SYN-SCZ-2026-023",
+    "SYN-CHQ-2026-010",
+    "SYN-LPZ-2026-011",
+    "SYN-CBB-2026-003"
+  ],
+  "test": [
+    "SYN-TAR-2026-007",
+    "SYN-CBB-2026-022",
+    "SYN-SCZ-2026-004",
+    "SYN-CHQ-2026-015",
+    "SYN-LPZ-2026-002",
+    "SYN-BEN-2026-008",
+    "SYN-CBB-2026-012",
+    "SYN-SCZ-2026-013"
+  ]
+}
