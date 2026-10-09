@@ -43,7 +43,18 @@ def fake_client(monkeypatch: pytest.MonkeyPatch) -> FakeClient:
     return client
 
 
-def test_docs_lists_the_endpoints() -> None:
+def test_frontend_is_served_without_hiding_docs() -> None:
+    page = CLIENT.get("/")
+    assert page.status_code == 200
+    assert "Asistente de redacción" in page.text
+    assert "requiere revisión humana" in page.text
+    script = CLIENT.get("/static/app.js")
+    assert script.status_code == 200
+    assert "innerHTML" not in script.text
+    docs = CLIENT.get("/docs")
+    assert docs.status_code == 200
+    health = CLIENT.get("/api/health")
+    assert health.status_code == 200
     response = CLIENT.get("/docs")
     assert response.status_code == 200
     spec = CLIENT.get("/openapi.json")

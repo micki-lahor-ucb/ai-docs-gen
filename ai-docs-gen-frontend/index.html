@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Asistente de redacción — Informe breve de antecedentes</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Asistente de redacción — Informe breve de antecedentes</h1>
+      <p class="banner">Prototipo académico con datos sintéticos. El resultado es un borrador y requiere revisión humana.</p>
+      <p id="service-status" class="status" role="status"></p>
+    </header>
+
+    <form id="draft-form">
+      <label>
+        Caso sintético
+        <select id="case-select" required>
+          <option value="">Seleccione un caso</option>
+        </select>
+      </label>
+
+      <section id="case-fields" hidden>
+        <h2>Datos del caso</h2>
+        <dl id="case-readonly"></dl>
+
+        <label>
+          Objetivo
+          <textarea id="objective" rows="3" maxlength="2000"></textarea>
+        </label>
+
+        <label>
+          Situación jurídica
+          <input id="legal-status" type="text" maxlength="200" placeholder="Vacío si no fue proporcionada">
+        </label>
+
+        <label>
+          Hechos conocidos, uno por línea
+          <textarea id="facts" rows="5"></textarea>
+        </label>
+
+        <label>
+          Contradicciones registradas, una por línea
+          <textarea id="contradictions" rows="3"></textarea>
+        </label>
+
+        <label>
+          Datos faltantes, uno por línea
+          <textarea id="missing-fields" rows="3"></textarea>
+        </label>
+
+        <fieldset>
+          <legend>Sujetos procesales</legend>
+          <div id="subjects"></div>
+        </fieldset>
+
+        <label>
+          Método
+          <select id="method">
+            <option value="baseline">Plantilla (línea base)</option>
+            <option value="rag">RAG + Qwen3.5:4B</option>
+          </select>
+        </label>
+
+        <button id="generate" type="submit">Generar borrador</button>
+        <p id="loading" class="status" role="status"></p>
+      </section>
+    </form>
+
+    <section id="error" class="error" hidden role="alert"></section>
+
+    <section id="result" hidden>
+      <h2>Resultado</h2>
+      <p id="meta"></p>
+      <h3>Fuentes recuperadas</h3>
+      <ul id="sources"></ul>
+      <h3>Advertencias</h3>
+      <ul id="warnings"></ul>
+      <h3>Borrador</h3>
+      <pre id="draft"></pre>
+    </section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
