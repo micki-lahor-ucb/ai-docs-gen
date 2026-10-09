@@ -1,0 +1,178 @@
+[
+  {
+    "case_id": "SYN-PAN-2026-020",
+    "model": "qwen3.5:4b",
+    "latency_ms": 22371,
+    "retrieved_source_ids": [
+      "SRC-PAN-2026-110",
+      "SRC-PAN-2026-109",
+      "SRC-PAN-2026-108"
+    ],
+    "warnings": []
+  },
+  {
+    "case_id": "SYN-CHQ-2026-001",
+    "model": "qwen3.5:4b",
+    "latency_ms": 21378,
+    "retrieved_source_ids": [
+      "SRC-CHQ-2026-004",
+      "SRC-CHQ-2026-002",
+      "SRC-CHQ-2026-001"
+    ],
+    "warnings": []
+  },
+  {
+    "case_id": "SYN-POT-2026-017",
+    "model": "qwen3.5:4b",
+    "latency_ms": 13052,
+    "retrieved_source_ids": [
+      "SRC-POT-2026-061",
+      "SRC-POT-2026-063",
+      "SRC-POT-2026-064"
+    ],
+    "warnings": []
+  },
+  {
+    "case_id": "SYN-TAR-2026-018",
+    "model": "qwen3.5:4b",
+    "latency_ms": 17922,
+    "retrieved_source_ids": [
+      "SRC-TAR-2026-070",
+      "SRC-TAR-2026-074",
+      "SRC-TAR-2026-071"
+    ],
+    "warnings": []
+  },
+  {
+    "case_id": "SYN-ORU-2026-024",
+    "model": "qwen3.5:4b",
+    "latency_ms": 20544,
+    "retrieved_source_ids": [
+      "SRC-ORU-2026-071",
+      "SRC-ORU-2026-072",
+      "SRC-ORU-2026-074"
+    ],
+    "warnings": []
+  },
+  {
+    "case_id": "SYN-LPZ-2026-014",
+    "model": "qwen3.5:4b",
+    "latency_ms": 13668,
+    "retrieved_source_ids": [
+      "SRC-LPZ-2026-030",
+      "SRC-LPZ-2026-033",
+      "SRC-LPZ-2026-031"
+    ],
+    "warnings": []
+  },
+  {
+    "case_id": "SYN-POT-2026-006",
+    "model": "qwen3.5:4b",
+    "latency_ms": 16211,
+    "retrieved_source_ids": [
+      "SRC-POT-2026-112",
+      "SRC-POT-2026-114",
+      "SRC-POT-2026-113"
+    ],
+    "warnings": []
+  },
+  {
+    "case_id": "SYN-ORU-2026-005",
+    "model": "qwen3.5:4b",
+    "latency_ms": 15069,
+    "retrieved_source_ids": [
+      "SRC-ORU-2026-106",
+      "SRC-ORU-2026-108",
+      "SRC-ORU-2026-110"
+    ],
+    "warnings": []
+  },
+  {
+    "case_id": "SYN-PAN-2026-009",
+    "model": "qwen3.5:4b",
+    "latency_ms": 22430,
+    "retrieved_source_ids": [
+      "SRC-PAN-2026-011",
+      "SRC-PAN-2026-012",
+      "SRC-PAN-2026-014"
+    ],
+    "warnings": []
+  },
+  {
+    "case_id": "SYN-PAN-2026-021",
+    "model": "qwen3.5:4b",
+    "latency_ms": 16708,
+    "retrieved_source_ids": [
+      "SRC-PAN-2026-111",
+      "SRC-PAN-2026-115",
+      "SRC-PAN-2026-113"
+    ],
+    "warnings": []
+  },
+  {
+    "case_id": "SYN-BEN-2026-019",
+    "model": "qwen3.5:4b",
+    "latency_ms": 12917,
+    "retrieved_source_ids": [
+      "SRC-BEN-2026-103",
+      "SRC-BEN-2026-101",
+      "SRC-BEN-2026-104"
+    ],
+    "warnings": []
+  },
+  {
+    "case_id": "SYN-ORU-2026-016",
+    "model": "qwen3.5:4b",
+    "latency_ms": 17493,
+    "retrieved_source_ids": [
+      "SRC-ORU-2026-050",
+      "SRC-ORU-2026-051",
+      "SRC-ORU-2026-053"
+    ],
+    "warnings": []
+  },
+  {
+    "case_id": "SYN-SCZ-2026-023",
+    "model": "qwen3.5:4b",
+    "latency_ms": 20756,
+    "retrieved_source_ids": [
+      "SRC-SCZ-2026-061",
+      "SRC-SCZ-2026-063",
+      "SRC-SCZ-2026-062"
+    ],
+    "warnings": []
+  },
+  {
+    "case_id": "SYN-CHQ-2026-010",
+    "model": "qwen3.5:4b",
+    "latency_ms": 24469,
+    "retrieved_source_ids": [
+      "SRC-CHQ-2026-020",
+      "SRC-CHQ-2026-024",
+      "SRC-CHQ-2026-022"
+    ],
+    "warnings": []
+  },
+  {
+    "case_id": "SYN-LPZ-2026-011",
+    "model": "qwen3.5:4b",
+    "latency_ms": 17737,
+    "retrieved_source_ids": [
+      "SRC-LPZ-2026-025",
+      "SRC-LPZ-2026-029",
+      "SRC-LPZ-2026-026"
+    ],
+    "warnings": []
+  },
+  {
+    "case_id": "SYN-CBB-2026-003",
+    "model": "qwen3.5:4b",
+    "latency_ms": 19995,
+    "retrieved_source_ids": [
+      "SRC-CBB-2026-011",
+      "SRC-CBB-2026-015",
+      "SRC-CBB-2026-014"
+    ],
+    "warnings": []
+  }
+]
