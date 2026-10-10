@@ -38,6 +38,18 @@ def test_retrieval_uses_only_the_documents_it_receives() -> None:
     assert [item.source_id for item in selected] == ["SRC-1", "SRC-2"]
 
 
+def test_sources_from_another_case_are_not_retrieved() -> None:
+    from src.dataset.store import load_case_sources, load_cases
+
+    cases = load_cases()
+    first = cases["SYN-CHQ-2026-010"]
+    second = cases["SYN-LPZ-2026-002"]
+    selected = {item.source_id for item in retrieve(load_case_sources(first), build_query(first))}
+    assert selected
+    assert selected.isdisjoint(second["source_ids"])
+    assert selected <= set(first["source_ids"])
+
+
 def test_query_uses_objective_and_facts_only() -> None:
     case = {
         "objective": "Documentar el lindero.",

@@ -65,15 +65,48 @@ def test_frontend_is_served_without_hiding_docs() -> None:
     assert "/api/generate" in paths
 
 
-def test_valid_baseline_does_not_call_the_model(fake_client: FakeClient) -> None:
-    response = CLIENT.post("/api/generate", json={"case_id": "SYN-CHQ-2026-001", "method": "baseline"})
+def test_valid_case_copies_known_facts(fake_client: FakeClient) -> None:
+    response = CLIENT.post("/api/generate", json={"case_id": "SYN-CHQ-2026-010", "method": "baseline"})
+    assert response.status_code == 200
+    draft = response.json()["draft_markdown"]
+    assert "SYN-CHQ-2026-010" in draft
+    assert "tractor verde" in draft
+    assert "[PENDIENTE: información no proporcionada]" in draft
+    assert fake_client.calls == 0
+
+
+def test_hard_case_keeps_the_contradiction_and_the_missing_fields(fake_client: FakeClient) -> None:
+    response = CLIENT.post("/api/generate", json={"case_id": "SYN-BEN-2026-008", "method": "baseline"})
+    assert response.status_code == 200
+    draft = response.json()["draft_markdown"]
+    assert "Informe médico forense" in draft
+    assert "Prueba de alcoholemia" in draft
+    assert "no coinciden en la hora del incidente" in draft
+    assert "Samuel Quiroga" in draft
+    assert "Teresa Mendiola" in draft
+
+
+def test_end_to_end_baseline_flow(fake_client: FakeClient) -> None:
+    listed = CLIENT.get("/api/cases")
+    assert listed.status_code == 200
+    assert any(item["case_id"] == "SYN-CHQ-2026-010" for item in listed.json())
+    loaded = CLIENT.get("/api/cases/SYN-CHQ-2026-010")
+    assert loaded.status_code == 200
+    generated = CLIENT.post("/api/generate", json={"case_id": loaded.json()["case_id"], "method": "baseline"})
+    assert generated.status_code == 200
+    assert generated.json()["model"] == "template"
+    assert fake_client.calls == 0
+
+
+@pytest.mark.integration
+def test_end_to_end_rag_calls_the_local_model() -> None:
+    response = CLIENT.post("/api/generate", json={"case_id": "SYN-CHQ-2026-010", "method": "rag"})
     assert response.status_code == 200
     body = response.json()
-    assert body["method"] == "baseline"
-    assert body["model"] == "template"
-    assert "SYN-CHQ-2026-001" in body["draft_markdown"]
+    assert body["model"] == "qwen3.5:4b"
+    assert body["draft_markdown"].strip()
     assert body["retrieved_sources"]
-    assert fake_client.calls == 0
+    assert all(source_id.startswith("SRC-CHQ-2026-") for source_id in body["retrieved_sources"])
 
 
 def test_unknown_case_is_not_found(fake_client: FakeClient) -> None:
