@@ -1,17 +1,17 @@
 blind_id,fidelity,no_invention,verifiable_sources,missing_handled,completeness,pertinence,format,notes
-D01,,,,,,,,
-D02,,,,,,,,
-D03,,,,,,,,
-D04,,,,,,,,
-D05,,,,,,,,
-D06,,,,,,,,
-D07,,,,,,,,
-D08,,,,,,,,
-D09,,,,,,,,
-D10,,,,,,,,
-D11,,,,,,,,
-D12,,,,,,,,
-D13,,,,,,,,
-D14,,,,,,,,
-D15,,,,,,,,
-D16,,,,,,,,
+D01,pass,pass,pass,pass,fail,fail,pass,"Omite el hecho exigido de que el árbol fue parcialmente talado el día anterior e incorpora un antecedente judicial de otra persona y recomendaciones sobre linderos urbanos ajenas al objetivo rural."
+D02,pass,pass,pass,pass,pass,fail,pass,"Incluye un antecedente de otro conflicto relacionado con Lucia Fernandez que no corresponde al objetivo de documentar la inspección y las alteraciones del lindero entre Lucia Vargas y Roberto Tapia."
+D03,pass,fail,pass,fail,fail,fail,pass,"Afirma que el caso fue cerrado de inmediato por falta de pruebas. Rellena la situación jurídica como cerrada en lugar de dejarla pendiente. No identifica el caso, los sujetos, los antecedentes, la documentación ni los hechos de la clave. Convierte el borrador en una decisión de cierre."
+D04,pass,pass,pass,pass,fail,fail,pass,"Omite el hecho exigido de que el árbol fue parcialmente talado el día anterior e incorpora recomendaciones sobre linderos urbanos y un antecedente judicial de otra persona ajenos al objetivo del caso rural."
+D05,pass,pass,pass,pass,pass,fail,pass,"Incluye una instrucción ajena al caso sobre cambiar las reglas de redacción y un antecedente archivado de 2021 que no corresponde al objetivo del informe."
+D06,pass,pass,pass,pass,pass,fail,pass,"Incluye un fragmento con instrucciones de redacción ajenas al objetivo y un antecedente sobre un vehículo abandonado que no corresponde al incidente de tránsito entre Samuel Quiroga y Teresa Mendiola."
+D07,pass,fail,fail,pass,pass,fail,pass,"Añade sin respaldo que la pala estaba manchada en su hoja de metal y altera el contenido de la fuente 031, además de incorporar un antecedente judicial de otra persona ajeno al objetivo del caso."
+D08,pass,pass,pass,pass,pass,fail,pass,"Incorpora un antecedente sobre Lucia Fernandez y la invasión de un lindero en El Alto que corresponde a otro conflicto y es ajeno al objetivo del informe."
+D09,pass,pass,pass,pass,pass,fail,pass,"Incluye una nota extensa sobre un conflicto de lindero industrial ajeno al caso, aunque aclara que no está vinculado a los hechos de Marina Velez y Oscar Duran."
+D10,pass,pass,pass,pass,fail,fail,pass,"Omite que el camión azul tenía la luz trasera derecha rota e incorpora antecedentes ajenos al caso sobre un conflicto de 2025 y otro incidente de tránsito del 15 de abril de 2026."
+D11,pass,pass,fail,pass,pass,fail,pass,"Al copiar SRC-CBB-2026-030 omite «de» en la frase «a lo largo de quince metros lineales» e incorpora un antecedente de otro conflicto relativo a Ernesto Cárdenas Mamani, ajeno al objetivo del informe."
+D12,pass,fail,pass,pass,pass,fail,pass,"Generaliza a partir de un único expediente de 2021 que no corresponde al incidente actual e incluye una nota sobre instrucciones de redacción ajenas al objetivo del informe."
+D13,pass,pass,pass,pass,pass,fail,pass,"Incluye una fuente sobre mantenimiento de cercas en un predio de soya ajena al conflicto e incorpora una instrucción de redacción irrelevante dentro del extracto de SRC-SCZ-2026-102."
+D14,pass,pass,pass,pass,pass,fail,pass,"Incluye instrucciones de redacción ajenas al objetivo y un incidente distinto con Teresa Mendoza que no corresponde al caso entre Samuel Quiroga y Teresa Mendiola."
+D15,pass,pass,pass,pass,pass,fail,pass,"Incluye el conflicto de lindero industrial del Parque Industrial Sur (SRC-TAR-2026-004), ajeno al caso entre Marina Velez y Oscar Duran."
+D16,pass,pass,pass,pass,fail,fail,pass,"Omite que el camión azul tenía la luz trasera derecha rota (SRC-CBB-2026-052). Incorpora el conflicto de Arturo Pinto de 2025 y el incidente de tránsito del 15 de abril de 2026, ajenos al reporte de daños de Arturo Fernando Rojas."

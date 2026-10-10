@@ -15,6 +15,7 @@ if str(BACKEND_ROOT) not in sys.path:
 from src.dataset.builder import difficulty_tags  # noqa: E402
 from src.dataset.store import DATA_DIR, load_cases  # noqa: E402
 from src.evaluation.metrics import (  # noqa: E402
+    ALL_CRITERIA,
     critical_passed,
     is_accepted,
     recall_at_k,
@@ -85,8 +86,18 @@ def main() -> int:
     else:
         lines.extend(render_table(rows, retrieved, gold, cases))
     REPORT_PATH.write_text("\n".join(lines), encoding="utf-8")
+    export_csv(rows, ROOT / "reports" / "evaluation.csv")
     print(f"missing_labels={len(missing)} recall_at_3={recall_mean:.3f}")
     return 0
+
+
+def export_csv(rows: list[dict], path: Path) -> None:
+    """Save the joined labels. This file reveals the method after scoring."""
+    fieldnames = ["case_id", "method", "blind_id", *ALL_CRITERIA, "notes"]
+    with path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fieldnames, extrasaction="ignore")
+        writer.writeheader()
+        writer.writerows(rows)
 
 
 def render_table(rows: list[dict], retrieved: dict, gold: dict, cases: dict) -> list[str]:
@@ -121,6 +132,8 @@ def render_table(rows: list[dict], retrieved: dict, gold: dict, cases: dict) -> 
             "wilson": f"{low:.3f}–{high:.3f}",
             "critical": f"{critical_count}/{len(subset)}",
             "critical_errors": str(critical_errors),
+            "citations": rate(subset, "verifiable_sources"),
+            "completeness": rate(subset, "completeness"),
             "pertinence": rate(subset, "pertinence"),
             "format": rate(subset, "format"),
             "rouge": f"{statistics.fmean(rouge_scores):.3f}" if rouge_scores else "—",
@@ -136,6 +149,8 @@ def render_table(rows: list[dict], retrieved: dict, gold: dict, cases: dict) -> 
         ("Tasa de aceptación (Wilson 95 %)", "wilson"),
         ("Cuatro críticos aprobados", "critical"),
         ("Errores críticos", "critical_errors"),
+        ("Citas verificables", "citations"),
+        ("Completitud", "completeness"),
         ("Pertinencia", "pertinence"),
         ("Formato", "format"),
         ("ROUGE-L exploratorio", "rouge"),
@@ -144,6 +159,19 @@ def render_table(rows: list[dict], retrieved: dict, gold: dict, cases: dict) -> 
     for label, key in pairs:
         lines.append(f"| {label} | {summary['baseline'][key]} | {summary['rag'][key]} |")
     lines.append(f"| Recall@3 de la recuperación compartida | {recall_text} | {recall_text} |")
+    lines.extend(["", "## Errores anotados", ""])
+    lines.append("Una sola persona puntuó los borradores, con el método oculto al calificar. El estilo puede haberlo delatado. No hay acuerdo entre evaluadores.")
+    lines.append("")
+    for row in rows:
+        if is_accepted(row):
+            continue
+        failed = [
+            name
+            for name in ("fidelity", "no_invention", "verifiable_sources", "missing_handled", "completeness", "pertinence", "format")
+            if str(row.get(name, "")).strip().lower() in {"fail", "no", "reprobado", "false", "0"}
+        ]
+        note = (row.get("notes") or "").strip()
+        lines.append(f"- {row['case_id']} ({row['method']}): {', '.join(failed)}. {note}")
     lines.extend(["", "## Corte por tipo de caso", ""])
     for case_id in sorted(retrieved):
         tags = ", ".join(difficulty_tags(cases[case_id], DATA_DIR / "sources"))
