@@ -1,7 +1,7 @@
 # Ficha del modelo
 
 **Fecha:** 9 de octubre de 2026  
-**Estado:** configuración usada para los borradores de desarrollo. No se ha generado la prueba oficial.
+**Estado:** configuración usada en desarrollo y en la prueba oficial del 9 de octubre de 2026, commit `f4ca646`.
 
 ## Origen
 
@@ -37,7 +37,7 @@ La temperatura 0 y la semilla reducen la variación entre ejecuciones. No garant
 
 Una llamada corta del 9 de octubre de 2026, con esta configuración, respondió «listo» y no incluyó una cadena de razonamiento. El reloj marcó 11,2 segundos; la mayor parte fue la carga del modelo.
 
-Después se redactaron los 16 borradores de desarrollo. El modelo informado en cada uno fue `qwen3.5:4b`. La latencia estuvo entre 13 y 24 segundos, con una mediana de unos 18 segundos. No se redactó ningún caso de la prueba.
+Después se redactaron los 16 borradores de desarrollo. El modelo informado en cada uno fue `qwen3.5:4b`. La latencia estuvo entre 13 y 24 segundos, con una mediana de unos 18 segundos. La prueba oficial se generó una sola vez, el mismo 9 de octubre, con esta configuración. En esos ocho borradores la latencia mediana fue de 18,4 segundos.
 
 ## Límites
 

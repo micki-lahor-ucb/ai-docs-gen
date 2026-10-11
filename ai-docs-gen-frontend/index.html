@@ -10,7 +10,6 @@
   <main>
     <header>
       <h1>Asistente de redacción — Informe breve de antecedentes</h1>
-      <p class="banner">Prototipo académico con datos sintéticos. El resultado es un borrador y requiere revisión humana.</p>
       <p id="service-status" class="status" role="status"></p>
     </header>
 
@@ -22,7 +21,7 @@
         </select>
       </label>
 
-      <section id="case-fields" hidden>
+      <section id="case-fields" class="panel" hidden>
         <h2>Datos del caso</h2>
         <dl id="case-readonly"></dl>
 
@@ -56,22 +55,23 @@
           <div id="subjects"></div>
         </fieldset>
 
-        <label>
-          Método
-          <select id="method">
-            <option value="baseline">Plantilla (línea base)</option>
-            <option value="rag">RAG + Qwen3.5:4B</option>
-          </select>
-        </label>
-
-        <button id="generate" type="submit">Generar borrador</button>
+        <div class="generate-row">
+          <label>
+            Método
+            <select id="method">
+              <option value="baseline">Plantilla (línea base)</option>
+              <option value="rag">RAG + Qwen3.5:4B</option>
+            </select>
+          </label>
+          <button id="generate" type="submit">Generar borrador</button>
+        </div>
         <p id="loading" class="status" role="status"></p>
       </section>
     </form>
 
     <section id="error" class="error" hidden role="alert"></section>
 
-    <section id="result" hidden>
+    <section id="result" class="panel" hidden>
       <h2>Resultado</h2>
       <p id="meta"></p>
       <h3>Fuentes recuperadas</h3>
